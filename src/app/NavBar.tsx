@@ -19,9 +19,9 @@ export default function NavBar() {
                         <Nav.Link as={Link} href="/dynamic" active={pathName === "/dynamic"}>Dynamic </Nav.Link>
                         <Nav.Link as={Link} href="/isr" active={pathName === "/isr"}>Isr </Nav.Link>
                         <NavDropdown title="Topics" id="topic-dropdown">
-                            <NavDropdown.Item as={Link} href="/topics/fitness">Fitness</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} href="/topics/swimming">Swimming</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} href="/topics/cars">Cars</NavDropdown.Item>
                             <NavDropdown.Item as={Link} href="/topics/coding">Coding</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} href="/topics/fitness">Fitness</NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link as={Link} href="/search" active={pathName === "/search"}>Search</Nav.Link>
                     </Nav>
