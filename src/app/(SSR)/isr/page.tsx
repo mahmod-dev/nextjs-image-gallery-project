@@ -11,7 +11,7 @@ export const revalidate = 15 // refresh after 15 second all over the page (page 
 
 export default async function page() {
 
-    const response = await fetch("https://api.unsplash.com/photos/random?client_id=" + process.env.UNSPLASH_ACCESS_KEY, {
+    const response = await fetch("https://api.unsplash.com/photos/random?collection=4474589&client_id=" + process.env.UNSPLASH_ACCESS_KEY, {
         //  next: { revalidate: 15 }  // refresh after 15 second (fetch level not all page)
     })
     const image: ImageModel = await response.json()

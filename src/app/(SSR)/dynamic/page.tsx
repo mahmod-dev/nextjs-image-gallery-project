@@ -12,7 +12,7 @@ export const revalidate = 0 //disable caching
 
 export default async function page() {
 
-    const response = await fetch("https://api.unsplash.com/photos/random?client_id=" + process.env.UNSPLASH_ACCESS_KEY, {
+    const response = await fetch("https://api.unsplash.com/photos/random?collection=4474589&client_id=" + process.env.UNSPLASH_ACCESS_KEY, {
         //    cache:"no-cache"/"no-store"
         //  next: { revalidate: 0 }
     })
